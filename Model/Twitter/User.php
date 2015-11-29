@@ -11,7 +11,7 @@ namespace Sama\Twitterfeed\Model\Twitter;
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 
-class Timeline
+class User
 {
 
     protected $_connection;
@@ -22,7 +22,7 @@ class Timeline
         $this->_connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token, $access_token_secret);
     }
 
-    public function get($username, $limit)
+    public function getTimeline($username, $limit)
     {
         return $this->_connection->get("statuses/user_timeline", [
             "count" => $limit,

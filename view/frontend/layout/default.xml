@@ -8,7 +8,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="footer">
-            <block class="Sama\Twitterfeed\Block\Timeline" name="twitterfeed-timeline" template="footer/timeline.phtml"/>
+            <block class="Sama\Twitterfeed\Block\Timeline" name="twitterfeed-timeline" template="footer/timeline.phtml"></block>
         </referenceContainer>
     </body>
 </page>

@@ -10,25 +10,34 @@
 
 namespace Sama\Twitterfeed\Block;
 
-use Sama\Twitterfeed\Model\Twitter\Timeline;
+use Sama\Twitterfeed\Model\Twitter\User;
 
-class Timeline  extends \Magento\Framework\View\Element\Template
+class Timeline extends \Magento\Framework\View\Element\Template
 {
 
-    protected $_timeline;
+    protected $_twitter;
 
+    /**
+     * Timeline constructor.
+     * @param \Magento\Framework\View\Element\Template\Context $context
+     * @param \Timeline $timeline
+     * @param array $data
+     */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        \Timeline $timeline,
+        \User $twitter,
         array $data = []
     ) {
-        $this->_timeline = $timeline;
+        $this->_twitter = $twitter;
 
         parent::__construct($context, $data);
     }
 
+    /**
+     * @return mixed
+     */
     public function getTweets()
     {
-        return $this->_timeline->get('magestackday', 5);
+        return $this->_twitter->getTimeline('magestackday', 5);
     }
 }
