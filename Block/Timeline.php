@@ -10,8 +10,6 @@
 
 namespace Sama\Twitterfeed\Block;
 
-use Sama\Twitterfeed\Model\Twitter\User;
-
 class Timeline extends \Magento\Framework\View\Element\Template
 {
 
@@ -25,7 +23,7 @@ class Timeline extends \Magento\Framework\View\Element\Template
      */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        \User $twitter,
+        \Sama\Twitterfeed\Model\Twitter\User $twitter,
         array $data = []
     ) {
         $this->_twitter = $twitter;
