@@ -1,3 +1,4 @@
+# WARNING! NOT STABLE: IS WIP
 # magento2-twitter feed
 =====================
 displays a twitter timeline in the footer
