@@ -29,7 +29,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Sama\\Skipcart\\": ""
+      "Sama\\Twitterfeed\\": ""
     }
   }
 }
