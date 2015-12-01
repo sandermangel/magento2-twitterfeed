@@ -1,7 +1,7 @@
 {
   "name": "sama/twitterfeed",
   "description": "Display a simple twitter feed in the footer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "http://sandermangel.nl",
   "license": "OSL-3.0",
   "authors": [
